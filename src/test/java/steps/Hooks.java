@@ -19,7 +19,7 @@ public class Hooks extends BasePage{
             scenario.log("Scenario failing, please refer to the image attached to this report.");
             final byte[] screenshot = ((TakesScreenshot) driver)
             .getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "imagen/png", "Screenshot of error.");
+            scenario.attach(screenshot, "image/png", "Screenshot of error.");
         }
     }
     

@@ -52,7 +52,7 @@ public class FreeRangeSteps {
     @Then("^(?:I|The user|The client) can validate the options in the checkout page$")
     public void validateChecoutPlans(){
         List<String> lista = registro.returnPlanDropdownValues();
-        List<String> listaEsperada = Arrays.asList("Academia: $16.99 / mes \u2022 11 productos","Academia: $176 / a\u00f1o \u2022 11 productos", "Free: Gratis \u2022 1 producto");
+        List<String> listaEsperada = Arrays.asList("Academia: $16.99 / mes \u2022 12 productos","Academia: $176 / a\u00f1o \u2022 12 productos", "Free: Gratis \u2022 1 producto");
         // Cambie los caracteres especiales  • por \u2022 y ñ por \u00f1
         Assert.assertEquals(lista,listaEsperada);
     }

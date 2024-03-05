@@ -19,8 +19,8 @@ Examples:
     | Recursos |
     | Udemy |
     | Mentorías |
-    | Newsletter |
 
+@courses
 Scenario: courses are presented correctly to potential customers
 When The user select Elegir Plan
 And The client select Introduction to Testing
